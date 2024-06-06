@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>zad.3</title>
+<script>
+function sprawdzdlugoschasla(){
+    var haslo = document.getElementById('pole').value;
+    if(haslo.length>=8) document.getElementById('wynik').innerHTML='haslo ma odpowiednia dlugosc znakow';
+    else if(haslo.length<=7) document.getElementById('wynik').innerHTML='haslo jest za krotkie';
+}
+</script>
+    </head>
+    <body>
+        <input type="text" id="pole">
+        <input type="button" value="Sprawdz dlugosc hasla" onclick="sprawdzdlugoschasla()">
+<div id="wynik"></div>
+    </body>
+</html>
